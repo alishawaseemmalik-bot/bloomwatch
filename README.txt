@@ -1,0 +1,1 @@
+Open index.html in a browser. Requires internet for Font Awesome and Unsplash images.

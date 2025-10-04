@@ -5,29 +5,269 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>BloomWatch - Advanced Plant Monitoring</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-        }
-        :root {
-            --primary: #2e7d32;
-            --primary-light: #4caf50;
-            --primary-dark: #1b5e20;
-            --secondary: #ff9800;
-            --accent: #8bc34a;
-            --text: #333333;
-            --text-light: #666666;
-            --background: #f9f9f9;
-            --white: #ffffff;
-            --shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-        }
-        /* rest of CSS omitted for brevity, as included by user */
-    </style>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <!-- Full body content already included in user's input -->
+    <!-- Header -->
+    <header>
+        <div class="header-container">
+            <div class="logo">
+                <i class="fas fa-seedling"></i>
+                <span>BloomWatch</span>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#features">Features</a></li>
+                    <li><a href="#dashboard">Dashboard</a></li>
+                    <li><a href="#plants">My Plants</a></li>
+                    <li><a href="#testimonials">Testimonials</a></li>
+                </ul>
+            </nav>
+            <button class="cta-button">Get Started</button>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-content">
+            <h1>Advanced Plant Monitoring For The Modern Gardener</h1>
+            <p>BloomWatch uses cutting-edge technology to help you grow healthier plants with real-time monitoring, smart alerts, and personalized care recommendations.</p>
+            <button class="cta-button">Start Your Free Trial</button>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features" id="features">
+        <div class="section-title">
+            <h2>Why Choose BloomWatch?</h2>
+            <p>Our advanced features make plant care simpler and more effective than ever before</p>
+        </div>
+        <div class="features-grid">
+            <div class="feature-card">
+                <div class="feature-icon">
+                    <i class="fas fa-tint"></i>
+                </div>
+                <h3>Smart Watering</h3>
+                <p>Automated watering system that adjusts based on soil moisture, weather forecasts, and plant type.</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">
+                    <i class="fas fa-sun"></i>
+                </div>
+                <h3>Light Monitoring</h3>
+                <p>Track sunlight exposure and receive recommendations for optimal plant placement.</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">
+                    <i class="fas fa-temperature-high"></i>
+                </div>
+                <h3>Climate Control</h3>
+                <p>Monitor temperature and humidity levels to create the perfect environment for your plants.</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">
+                    <i class="fas fa-bug"></i>
+                </div>
+                <h3>Pest Detection</h3>
+                <p>AI-powered detection system that identifies common pests and suggests organic solutions.</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">
+                    <i class="fas fa-chart-line"></i>
+                </div>
+                <h3>Growth Analytics</h3>
+                <p>Track your plant's growth over time with detailed analytics and progress reports.</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">
+                    <i class="fas fa-robot"></i>
+                </div>
+                <h3>AI Assistant</h3>
+                <p>Get personalized plant care advice from our AI assistant based on your specific conditions.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Dashboard Section -->
+    <section class="dashboard" id="dashboard">
+        <div class="dashboard-container">
+            <div class="dashboard-content">
+                <h2>Real-Time Plant Dashboard</h2>
+                <p>Monitor all your plants from a single dashboard with real-time data and actionable insights.</p>
+                <p>Our advanced sensors collect data 24/7, giving you complete visibility into your garden's health.</p>
+                <button class="cta-button">View Full Dashboard</button>
+            </div>
+            <div class="dashboard-stats">
+                <div class="stat-card">
+                    <div class="stat-value">12</div>
+                    <div class="stat-label">Plants Monitored</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-value">96%</div>
+                    <div class="stat-label">Health Score</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-value">3</div>
+                    <div class="stat-label">Needs Attention</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-value">28°C</div>
+                    <div class="stat-label">Average Temp</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Plants Section -->
+    <section class="plants" id="plants">
+        <div class="section-title">
+            <h2>Your Plant Collection</h2>
+            <p>Manage and monitor all your plants in one place</p>
+        </div>
+        <div class="plants-grid">
+            <div class="plant-card">
+                <div class="plant-image" style="background-image: url('https://images.unsplash.com/photo-1416879595882-3373a0480b5b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80');"></div>
+                <div class="plant-info">
+                    <h3>Monstera Deliciosa</h3>
+                    <p>Living Room • Medium Light</p>
+                    <div class="plant-status">
+                        <span>Water: <span class="status-good">Optimal</span></span>
+                        <span>Light: <span class="status-warning">Low</span></span>
+                    </div>
+                </div>
+            </div>
+            <div class="plant-card">
+                <div class="plant-image" style="background-image: url('https://images.unsplash.com/photo-1598880940083-28b5d4d85e1d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80');"></div>
+                <div class="plant-info">
+                    <h3>Snake Plant</h3>
+                    <p>Bedroom • Low Light</p>
+                    <div class="plant-status">
+                        <span>Water: <span class="status-good">Optimal</span></span>
+                        <span>Light: <span class="status-good">Optimal</span></span>
+                    </div>
+                </div>
+            </div>
+            <div class="plant-card">
+                <div class="plant-image" style="background-image: url('https://images.unsplash.com/photo-1574323347407-f5e1ad6d020b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80');"></div>
+                <div class="plant-info">
+                    <h3>Fiddle Leaf Fig</h3>
+                    <p>Office • Bright Light</p>
+                    <div class="plant-status">
+                        <span>Water: <span class="status-warning">Needs Water</span></span>
+                        <span>Light: <span class="status-good">Optimal</span></span>
+                    </div>
+                </div>
+            </div>
+            <div class="plant-card">
+                <div class="plant-image" style="background-image: url('https://images.unsplash.com/photo-1593953443285-b4ad8e3b0de5?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80');"></div>
+                <div class="plant-info">
+                    <h3>Peace Lily</h3>
+                    <p>Bathroom • Medium Light</p>
+                    <div class="plant-status">
+                        <span>Water: <span class="status-good">Optimal</span></span>
+                        <span>Light: <span class="status-good">Optimal</span></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials" id="testimonials">
+        <div class="testimonials-container">
+            <div class="section-title">
+                <h2>What Our Users Say</h2>
+                <p>Join thousands of happy plant parents who transformed their gardening experience</p>
+            </div>
+            <div class="testimonial-slider">
+                <div class="testimonial-card">
+                    <div class="testimonial-text">
+                        "BloomWatch completely transformed how I care for my plants. I used to struggle with watering schedules, but now everything is automated and my plants are thriving!"
+                    </div>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">SM</div>
+                        <div>
+                            <h4>Sarah Johnson</h4>
+                            <p>Plant Enthusiast</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="testimonial-text">
+                        "As someone who travels frequently, BloomWatch gives me peace of mind knowing my plants are being cared for even when I'm away. The alerts and remote monitoring are game-changers."
+                    </div>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">MK</div>
+                        <div>
+                            <h4>Michael Kim</h4>
+                            <p>Frequent Traveler</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="testimonial-text">
+                        "The AI assistant helped me identify a nutrient deficiency in my fiddle leaf fig that I never would have noticed. It suggested the perfect treatment and saved my favorite plant!"
+                    </div>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">AJ</div>
+                        <div>
+                            <h4>Amanda Rodriguez</h4>
+                            <p>Interior Designer</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-container">
+            <div class="footer-column">
+                <h3>BloomWatch</h3>
+                <p>Advanced plant monitoring for the modern gardener. Grow healthier plants with our cutting-edge technology.</p>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+            </div>
+            <div class="footer-column">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#features">Features</a></li>
+                    <li><a href="#dashboard">Dashboard</a></li>
+                    <li><a href="#plants">My Plants</a></li>
+                    <li><a href="#testimonials">Testimonials</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h3>Resources</h3>
+                <ul>
+                    <li><a href="#">Plant Care Guides</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">FAQ</a></li>
+                    <li><a href="#">Support</a></li>
+                    <li><a href="#">Community</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h3>Contact Us</h3>
+                <ul>
+                    <li><i class="fas fa-envelope"></i> hello@bloomwatch.com</li>
+                    <li><i class="fas fa-phone"></i> +1 (555) 123-4567</li>
+                    <li><i class="fas fa-map-marker-alt"></i> 123 Garden St, Green City</li>
+                </ul>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>&copy; 2023 BloomWatch. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
