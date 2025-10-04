@@ -1,26 +1,20 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>BloomWatch</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>BloomWatch — Flower & Environment Monitor</title>
+  <meta name="description" content="BloomWatch — interactive maps and charts to visualize flower blooming patterns and environmental trends." />
   <link rel="stylesheet" href="style.css">
-  <!-- Leaflet map library -->
-  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
-  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
-  <!-- Chart.js library -->
-  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"/>
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" defer></script>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js" defer></script>
 </head>
 <body>
-  <h1>BloomWatch</h1>
-  <p>A simple demo website for BloomWatch project</p>
-
-  <!-- Map -->
-  <div id="map" style="height: 400px; width: 90%; margin: auto;"></div>
-
-  <!-- Chart -->
-  <canvas id="myChart" width="400" height="200"></canvas>
-
+  <h1>BloomWatch Website</h1>
+  <p>Demo website with Map and Chart.</p>
+  <div id="mapContainer" style="height:400px;"></div>
+  <canvas id="bloomChart"></canvas>
   <script src="script.js"></script>
 </body>
 </html>

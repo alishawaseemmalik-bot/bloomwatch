@@ -1,15 +1,1 @@
-body {
-  font-family: Arial, sans-serif;
-  text-align: center;
-  margin: 20px;
-}
-
-#map {
-  margin: 20px auto;
-  border: 2px solid #333;
-}
-
-canvas {
-  margin: 20px auto;
-  display: block;
-}
+body{font-family:Arial, sans-serif;margin:0;padding:0;}h1{background:#2d9c71;color:white;padding:10px;}#mapContainer{margin:20px;}canvas{margin:20px;}
